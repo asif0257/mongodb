@@ -1,6 +1,6 @@
-resource "kubernetes_ingress_v1" "name" {
+resource "kubernetes_ingress_v1" "godaddy" {
   metadata {
-    name = "name"
+    name = "phaniingress"
 
     annotations = {
       "kubernetes.io/ingress.class" = "nginx"
