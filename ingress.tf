@@ -1,6 +1,6 @@
 resource "kubernetes_ingress_v1" "godaddy" {
   metadata {
-    name = "phaniingress"
+    name = "name"
 
     annotations = {
       "kubernetes.io/ingress.class" = "nginx"
@@ -9,7 +9,7 @@ resource "kubernetes_ingress_v1" "godaddy" {
 
   spec {
     rule {
-      host = "phaniaz.xyz"
+      host = "$NGINX_INGRESS_IP.nip.io"
 
       http {
         path {
