@@ -89,4 +89,5 @@ resource "kubernetes_service" "mongo_express_service" {
 
     type = "LoadBalancer"
   }
+  
 }
